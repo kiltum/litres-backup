@@ -43,3 +43,9 @@ ios.epub|для ios
 
 ![alt text](https://raw.githubusercontent.com/kiltum/litres-backup/master/screen.png "How it works")
 
+## Баги/хотелки
+
+- Максимум качает 1000 первых книг.
+- Надо сделать "скачать только эту книгу/полку"
+
+

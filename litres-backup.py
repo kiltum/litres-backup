@@ -1,5 +1,8 @@
 #!/usr/bin/env python
 
+# litres.ru backup tool
+# (c) 2016 multik@multik.org
+
 import sys
 import getopt
 import requests
@@ -14,7 +17,12 @@ sid = ""
 
 
 def help():
-    print "Using is simple"
+    print "litres.ru backup tool"
+    print "-d for debug"
+    print "-u for user"
+    print "-p for password"
+    print "-f for format (default fb2.zip), look at https://github.com/kiltum/litres-backup"
+    print "ATTN: No any check. Download to current directory"
 
 
 def main(argv):
@@ -110,7 +118,7 @@ def main(argv):
         with open(filename, "wb") as handle:
             for data in tqdm(r.iter_content(), unit='b', total=int(file_size)):
                 handle.write(data)
-        time.sleep(1)
+        time.sleep(1) # do not DDoS litres.
         count = count + 1
 
 
