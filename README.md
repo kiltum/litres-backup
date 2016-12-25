@@ -23,22 +23,22 @@ _Базируется на litres api версии 3.31_
 - -p пароль. Оно же
 - -f формат, в котором забирать книги. Список форматов разный, но для моей коллекции работают следующие 
 
-
-|fb2.zip|
-|html|
-|html.zip|
-|txt|
-|txt.zip|
-|rtf.zip|
-|a4.pdf|
-|a6.pdf|
-|mobi.prc|
-|epub|
-|ios.epub|
+| -f|примечание|
+|fb2.zip|для андроида|
+|html||
+|html.zip||
+|txt||
+|txt.zip||
+|rtf.zip||
+|a4.pdf||
+|a6.pdf| для читалок|
+|mobi.prc||
+|epub||
+|ios.epub|для ios|
 
 Скачивает в текущий каталог, никаких проверок класса "есть ли этот фаил" не производится. 
 
 ## Что должно получиться
 
-[work]: https://raw.githubusercontent.com/kiltum/litres-backup/master/screen.png "How it works"
+![alt text](https://raw.githubusercontent.com/kiltum/litres-backup/master/screen.png "How it works")
 
