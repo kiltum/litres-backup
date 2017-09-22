@@ -1,6 +1,6 @@
-# Резервное копирование с litres. 
+# Резервное копирование с litres.
 
-Я купил 500+ книг с litres.ru. Внезапно мне показалось, что неплохо было-бы сделать резервную копию всех моих накоплений. 
+Я купил 500+ книг с litres.ru. Внезапно мне показалось, что неплохо было-бы сделать резервную копию всех моих накоплений.
 
 **Это не "бесплатная качалка платных книг". Скачивает только те книги, что есть в разделе "мои книги" на litres.ru**
 
@@ -15,27 +15,22 @@ _Базируется на litres api версии 3.31_
 
 ## Как пользоваться
 
-``` bash
-./litres-backup.py -u пользователь -p пароль -f ios.epub
 ```
-- -d включить отладку. выводит кучу информации про ответы сайта. 
-- -u имя пользователя. То, что вы вводите на сайте или в приложении
-- -p пароль. То же самое с того же сайта
-- -f формат, в котором забирать книги. Список форматов разный, но для моей коллекции работают следующие 
+$ ./litres-backup.py -h
+usage: litres-backup.py [-h] [-u USER] [-p PASSWORD] [-f FORMAT] [-d] [-v]
 
--f|примечание
----|---
-fb2.zip|для андроида
-html|
-html.zip|
-txt|
-txt.zip|
-rtf.zip|
-a4.pdf|
-a6.pdf|для читалок
-mobi.prc|
-epub|
-ios.epub|для ios
+litres.ru backup tool
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -u USER, --user USER  Username
+  -p PASSWORD, --password PASSWORD
+                        Password
+  -f FORMAT, --format FORMAT
+                        Downloading format. 'list' for available
+  -d, --debug           Add debug output
+  -v, --verbosedebug    You really want to see what happens?
+```
 
 Скачивает в текущий каталог, никаких проверок класса "есть ли этот фаил" не производится. Докачек и прочего тоже пока не предусмотрено.
 
